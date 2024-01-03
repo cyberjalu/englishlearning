@@ -34,10 +34,11 @@ export function GetYourBookFromUs() {
   return (
     <section className="px-8">
       <div className="container mx-auto mb-16 text-center">
-        <Typography variant="h2" color="blue-gray" className="mb-4">
+        <Typography placeholder={undefined} variant="h2" color="blue-gray" className="mb-4">
           Get your skills from us!
         </Typography>
         <Typography
+        placeholder={undefined}
           variant="lead"
           className="mx-auto w-full px-4 !text-gray-500 lg:w-5/12"
         >

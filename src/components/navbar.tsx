@@ -36,6 +36,7 @@ function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
       <Typography
+      placeholder={undefined}
         as="a"
         href={href || "#"}
         target={href ? "" : "_self"}
@@ -64,9 +65,9 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
+    <MTNavbar placeholder={undefined} shadow={false} fullWidth className="border-0 sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
-        <Typography color="blue-gray" className="text-lg font-bold">
+        <Typography placeholder={undefined} color="blue-gray" className="text-lg font-bold">
           Online English Learning
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
@@ -78,6 +79,7 @@ export function Navbar() {
           ))}
         </ul>
         <IconButton
+        placeholder={undefined}
           variant="text"
           color="gray"
           onClick={handleOpen}
@@ -101,9 +103,9 @@ export function Navbar() {
             ))}
           </ul>
           <div className="mt-6 mb-4 flex items-center gap-2">
-            <Button variant="text">Log in</Button>
+            <Button placeholder={undefined} variant="text">Log in</Button>
             <a href="https://www.material-tailwind.com/blocks" target="_blank">
-              <Button color="gray">blocks</Button>
+              <Button placeholder={undefined} color="gray">blocks</Button>
             </a>
           </div>
         </div>

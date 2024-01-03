@@ -16,13 +16,14 @@ function Hero() {
             Free
           </Typography> */}
           <Typography
+            placeholder={undefined}
             variant="h1"
             color="blue-gray"
-            className="mb-2 max-w-sm text-3xl !leading-snug lg:mb-3 lg:text-5xl"
-          >
+            className="mb-2 max-w-sm text-3xl !leading-snug lg:mb-3 lg:text-5xl"        >
             English Campaign
           </Typography>
           <Typography
+            placeholder={undefined}
             variant="lead"
             className="mb-6 font-normal !text-gray-500 md:pr-16 xl:pr-28"
           >

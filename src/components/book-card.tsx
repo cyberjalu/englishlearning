@@ -23,8 +23,7 @@ import Link from 'next/link';
     img,
     category,
     title,
-    
-    href
+    href,
   }: BookCardProps) {
     return (
       <Card placeholder={undefined} color="transparent" shadow={false}>
