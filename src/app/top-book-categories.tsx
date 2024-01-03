@@ -42,24 +42,26 @@ export function TopBookCategories() {
   return (
     <section className="container mx-auto px-8 pb-20 pt-20 lg:pt-0">
       <div className="mb-20 grid place-items-center text-center">
-        <Typography variant="h2" color="blue-gray" className="my-3">
+        <Typography placeholder={undefined} variant="h2" color="blue-gray" className="my-3">
           English Skill
         </Typography>
-        <Typography variant="lead" className="!text-gray-500 lg:w-6/12">
+        <Typography placeholder={undefined} variant="lead" className="!text-gray-500 lg:w-6/12">
         When discussing English skills, we typically classify them into five main categories.
         </Typography>
       </div>
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <Card
+        placeholder={undefined}
           color="gray"
           className="relative grid h-full w-full place-items-center overflow-hidden text-center"
         >
           <div className="absolute inset-0 h-full w-full bg-gray-900/75" />
-          <CardBody className="relative w-full">
-            <Typography variant="h4" className="mt-9" color="white">
+          <CardBody placeholder={undefined} className="relative w-full">
+            <Typography placeholder={undefined} variant="h4" className="mt-9" color="white">
             Fluency & Pronunciation
             </Typography>
-            <Typography
+            <Typography 
+            placeholder={undefined}
               color="white"
               className="mt-4 mb-14 font-normal opacity-50"
             >
