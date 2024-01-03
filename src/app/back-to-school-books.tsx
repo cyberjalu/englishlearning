@@ -47,16 +47,18 @@ export function BackToSchoolBooks() {
     <section className="px-8 pt-20 pb-10" id="english-lesson">
       <div className="container mx-auto mb-20 text-center">
         <Typography
+        placeholder={undefined}
           variant="paragraph"
           color="blue-gray"
           className="mb-3 font-bold uppercase"
         >
           Always Free
         </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-2">
+        <Typography placeholder={undefined} variant="h1" color="blue-gray" className="mb-2">
           English Lesson
         </Typography>
         <Typography
+        placeholder={undefined}
           variant="lead"
           className="mx-auto w-full px-4 !text-gray-500 lg:w-9/12"
         >
@@ -88,7 +90,7 @@ export function BackToSchoolBooks() {
       </div>
       <div className="container mx-auto grid grid-cols-1 items-start gap-x-6 gap-y-20 md:grid-cols-2 xl:grid-cols-3">
         {BOOKS.map((props, key) => (
-          <BookCard key={key} {...props} />
+          <BookCard  desc={""} price={""} key={key} {...props} />
         ))}
       </div>
       {/* <div className="grid place-items-center">

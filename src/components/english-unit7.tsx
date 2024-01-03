@@ -5,23 +5,23 @@ import { Typography, Accordion, AccordionHeader, AccordionBody } from "@material
 
 const LangFocus = [
     {
-      title: "Pronunciation - Intonation in Wh- and Yes/No questions",
-      desc: "<p><i>Rules to Remember:</i> In wh- questions that ask for new information, the voice usually falls at the end of the question (falling intonation)</p> <br/> <img src='./unit7/Picture1.png' /> <br> <p>Example: In yes/no questions, the voice usually rises at the end of the question (rising)</p> <br> <img src='./unit7/Picture2.png' />",
+        title: "Pronunciation - Intonation in Wh- and Yes/No questions",
+        desc: "<p><i>Rules to Remember:</i> In wh- questions that ask for new information, the voice usually falls at the end of the question (falling intonation)</p> <br/> <img src='./unit7/Picture1.png' /> <br> <p>Example: In yes/no questions, the voice usually rises at the end of the question (rising)</p> <br> <img src='./unit7/Picture2.png' />",
     },
     {
-      title:
-        "Vocabulary - Words and phrases related to education after leaving school.",
-      desc: "<p>* school-leaver (n) a person who has just left school</p> <p>* vocational education (np) education that prepare students for work in a specific trade</p> <p>* higher education (n) education at a college or university</p> <p>* qualification (n) an official record showing that you have finished a training course or have the necessary skills</p> <p>* graduation (n) the act of completing a university degree or a course of study</p>",
+        title:
+            "Vocabulary - Words and phrases related to education after leaving school.",
+        desc: "<p>* school-leaver (n) a person who has just left school</p> <p>* vocational education (np) education that prepare students for work in a specific trade</p> <p>* higher education (n) education at a college or university</p> <p>* qualification (n) an official record showing that you have finished a training course or have the necessary skills</p> <p>* graduation (n) the act of completing a university degree or a course of study</p>",
     },
     {
-      title: "Grammar - Perfect gerunds and perfect participle clauses",
-      desc: "<p><b>Perfect gerunds</b></p> <p>Perfect gerund refers to an action that takes place before another action. It can be used as the subject of a sentence, the complement of the conjunctive verb “be”, the object of a preposition, and the object of a verb.</p> <p>Example:</p> <p>* Having built a new house costs a large amount of money.</p> <p>* She denied having broken the flower vase.</p> <p><b>Perfect participle</b></p> <p>Perfect participle phrase refers to an action that occurred before the action in the main clause. It identifies the subject of the main clause and acts as the reason why the main clause took place. The noun or the pronoun (subject) the perfect participle phrase identifies is either the subject of the perfect participle phrase or the object of its main verb.</p> <p><b>Example:</b></p> <p>Having heard the news of his accident, we decided to take the day off and see him.</p> <p>Not having been respected for his work, Jolie left the company and started his own business.</p>",
+        title: "Grammar - Perfect gerunds and perfect participle clauses",
+        desc: "<p><b>Perfect gerunds</b></p> <p>Perfect gerund refers to an action that takes place before another action. It can be used as the subject of a sentence, the complement of the conjunctive verb “be”, the object of a preposition, and the object of a verb.</p> <p>Example:</p> <p>* Having built a new house costs a large amount of money.</p> <p>* She denied having broken the flower vase.</p> <p><b>Perfect participle</b></p> <p>Perfect participle phrase refers to an action that occurred before the action in the main clause. It identifies the subject of the main clause and acts as the reason why the main clause took place. The noun or the pronoun (subject) the perfect participle phrase identifies is either the subject of the perfect participle phrase or the object of its main verb.</p> <p><b>Example:</b></p> <p>Having heard the news of his accident, we decided to take the day off and see him.</p> <p>Not having been respected for his work, Jolie left the company and started his own business.</p>",
     },
     {
-      title: "Practice: Supply the correct form of the verbs in brackets.",
-      desc: "<p>1. They left the restaurant, _______________ (spend) two hours over lunch.</p> <p>2. (See) _______________ photograph of the place, I had no desire to go there.</p> <p>3. (Switch) ______________ of the light, we went to bed.</p> <p>4. The boy was accused of (steal) ____________ her money.</p> <p>5. She apologized for (break) ____________ my vase.</p>",
+        title: "Practice: Supply the correct form of the verbs in brackets.",
+        desc: "<p>1. They left the restaurant, _______________ (spend) two hours over lunch.</p> <p>2. (See) _______________ photograph of the place, I had no desire to go there.</p> <p>3. (Switch) ______________ of the light, we went to bed.</p> <p>4. The boy was accused of (steal) ____________ her money.</p> <p>5. She apologized for (break) ____________ my vase.</p>",
     },
-  ];
+];
 
 const Skills = [
     {
@@ -43,7 +43,7 @@ const Skills = [
 ];
 const EngLishUnit7 = () => {
     const [open, setOpen] = React.useState(0);
-    const[openSkills, setOpenSkills] = React.useState(0)
+    const [openSkills, setOpenSkills] = React.useState(0)
     const handleOpen = (value: number) => setOpen(open === value ? 0 : value);
     const handleOpenSkills = (value: number) => setOpenSkills(openSkills === value ? 0 : value);
 
@@ -56,23 +56,25 @@ const EngLishUnit7 = () => {
             </section>
             <div className="container mx-auto py-20">
                 <div className="text-center">
-                    <Typography variant="h1" color="blue-gray" className="mb-4">
+                    <Typography variant="h1" color="blue-gray" className="mb-4" placeholder={undefined}>
                         Language Focus
                     </Typography>
-                    
+
                 </div>
                 <div className="mx-auto lg:max-w-screen-lg lg:px-20">
                     {LangFocus.map(({ title, desc }, key) => (
                         <Accordion
+                            placeholder={undefined}
                             key={key}
                             open={open === key + 1}
                             onClick={() => handleOpen(key + 1)}
                         >
-                            <AccordionHeader className="text-left text-gray-900">
+                            <AccordionHeader className="text-left text-gray-900" placeholder={undefined}>
                                 {title}
                             </AccordionHeader>
                             <AccordionBody>
                                 <Typography
+                                    placeholder={undefined}
                                     color="blue-gray"
                                     className="font-normal text-black-900"
                                 >
@@ -86,23 +88,25 @@ const EngLishUnit7 = () => {
 
             <div className="container mx-auto py-20">
                 <div className="text-center">
-                    <Typography variant="h1" color="blue-gray" className="mb-4">
+                    <Typography variant="h1" color="blue-gray" className="mb-4" placeholder={undefined}>
                         Skills
                     </Typography>
-                    
+
                 </div>
                 <div className="mx-auto lg:max-w-screen-lg lg:px-20">
                     {Skills.map(({ title, desc }, key) => (
                         <Accordion
+                            placeholder={undefined}
                             key={key}
                             open={openSkills === key + 1}
                             onClick={() => handleOpenSkills(key + 1)}
                         >
-                            <AccordionHeader className="text-left text-gray-900">
+                            <AccordionHeader placeholder={undefined} className="text-left text-gray-900">
                                 {title}
                             </AccordionHeader>
                             <AccordionBody>
                                 <Typography
+                                    placeholder={undefined}
                                     color="blue-gray"
                                     className="font-normal text-black-900"
                                 >
