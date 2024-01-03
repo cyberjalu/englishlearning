@@ -26,7 +26,7 @@ function Hero() {
             variant="lead"
             className="mb-6 font-normal !text-gray-500 md:pr-16 xl:pr-28"
           >
-            Dreaming of speaking English fluently but don't have a hefty budget for courses? Rejoice! The internet is bursting with a plethora of free resources to unlock your English potential. Whether you're a complete beginner or wanting to hone your skills, there's an abundance of online tools and communities ready to guide you on your path to mastery.
+            Dreaming of speaking English fluently but don&apos;t have a hefty budget for courses? Rejoice! The internet is bursting with a plethora of free resources to unlock your English potential. Whether you&apos;re a complete beginner or wanting to hone your skills, there&apos;s an abundance of online tools and communities ready to guide you on your path to mastery.
           </Typography>
         </div>
         <div className="mt-40 grid gap-6 lg:mt-0">
